@@ -2,6 +2,10 @@
 
 Ein moderner, hochoptimierter PDF-Viewer für die digitale Festschrift der Feuerwehr. Das Projekt kombiniert progressive WebP-Bildtechnik mit schnellem Startup und responsivem Design für Mobile und Desktop.
 
+## 🔥 Live ansehen: [festschrift.feuerwehr-kottgeisering.de](https://festschrift.feuerwehr-kottgeisering.de/)
+
+Dort läuft die echte Festschrift der Feuerwehr Kottgeisering mit genau diesem Viewer.
+
 > **English:** A lightweight, dependency-free flipbook viewer (plain HTML/CSS/JS) that shows a PDF
 > as pre-rendered WebP pages in two quality tiers, with table of contents, clickable links, zoom and
 > a mobile layout. Originally built for a fire brigade anniversary booklet.
