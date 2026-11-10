@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "source": "Meine Broschuere.pdf",
+  "numPages": 3,
+  "pages": [
+    {
+      "page": 1,
+      "imageLow": "webplow/0001.webp",
+      "imageHigh": "webphigh/0001.webp",
+      "thumb": "webpthumb/0001.webp"
+    },
+    {
+      "page": 2,
+      "imageLow": "webplow/0002.webp",
+      "imageHigh": "webphigh/0002.webp",
+      "thumb": "webpthumb/0002.webp"
+    },
+    {
+      "page": 3,
+      "imageLow": "webplow/0003.webp",
+      "imageHigh": "webphigh/0003.webp",
+      "thumb": "webpthumb/0003.webp"
+    }
+  ]
+}

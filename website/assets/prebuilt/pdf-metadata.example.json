@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "source": "Meine Broschuere.pdf",
+  "generatedAt": "2026-01-01T12:00:00+00:00",
+  "numPages": 3,
+  "metadata": {
+    "Title": "Meine Broschüre",
+    "Author": "Max Mustermann",
+    "Creator": "Beispiel"
+  },
+  "pageDimensions": [
+    { "page": 1, "width": 419.528, "height": 595.276 },
+    { "page": 2, "width": 839.055, "height": 595.276 },
+    { "page": 3, "width": 419.528, "height": 595.276 }
+  ],
+  "toc": [
+    { "title": "Einleitung", "page": 2, "items": [] },
+    {
+      "title": "Kapitel 1",
+      "page": 2,
+      "items": [
+        { "title": "Abschnitt 1.1", "page": 3, "items": [] }
+      ]
+    }
+  ],
+  "linkAnnotations": [
+    {
+      "page": 2,
+      "items": [
+        { "rect": [447.874, 483.149, 810.709, 509.149], "targetPage": 3 },
+        { "rect": [447.874, 439.949, 810.709, 465.949], "url": "https://example.com" }
+      ]
+    }
+  ]
+}

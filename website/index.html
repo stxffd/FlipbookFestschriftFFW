@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Festschrift</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/favicon-180x180.png" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/viewer.css" />
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2SNBKX5T17"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2SNBKX5T17');
+</script>
+<body>
+  <aside id="toc-panel" class="toc-panel" aria-label="Inhaltsverzeichnis" hidden>
+    <div class="toc-head">Inhaltsverzeichnis</div>
+    <div id="toc-list" class="toc-list"></div>
+    <div class="toc-foot">
+      <a id="toc-download-btn" class="toc-download-btn" href="FFW Kottgeisering Festschrift 2026.pdf" download="FFW Kottgeisering Festschrift 2026.pdf">Download</a>
+    </div>
+  </aside>
+
+  <main id="viewer-host" class="viewer-host" aria-live="polite">
+    <div id="loading" class="loading" hidden>Festschrift wird vorbereitet...</div>
+    <div id="error" class="error" hidden></div>
+    <button id="prev-side-btn" class="side-btn side-btn-left" type="button" aria-label="Vorherige Seite">&#10094;</button>
+    <button id="next-side-btn" class="side-btn side-btn-right" type="button" aria-label="NÃ¤chste Seite">&#10095;</button>
+
+    <div id="page-shell" class="page-shell">
+      <div id="page-skeleton" class="page-skeleton" aria-hidden="true">
+        <div class="page-skeleton-page">
+          <div class="page-skeleton-line page-skeleton-line-title"></div>
+          <div class="page-skeleton-line page-skeleton-line-subtitle"></div>
+          <div class="page-skeleton-art"></div>
+          <div class="page-skeleton-line page-skeleton-line-body"></div>
+          <div class="page-skeleton-line page-skeleton-line-body short"></div>
+        </div>
+      </div>
+      <canvas id="pdf-canvas"></canvas>
+      <div id="annotation-layer" class="annotationLayer"></div>
+    </div>
+  </main>
+
+  <footer class="bottom-bar" aria-label="Dokumentsteuerung">
+    <div class="bar-group mobile-menu" aria-label="Mobile Menue">
+      <button id="mobile-menu-btn" class="bar-btn bar-btn-red mobile-menu-btn" type="button" aria-label="Menue oeffnen">&#9776;</button>
+    </div>
+    <div class="bar-group bar-group-left">
+      <button id="toc-btn" class="bar-btn bar-btn-red" type="button">Inhaltsverzeichnis</button>
+      <a id="download-btn" class="bar-btn bar-btn-red" href="FFW Kottgeisering Festschrift 2026.pdf" download="FFW Kottgeisering Festschrift 2026.pdf">Download</a>
+    </div>
+    <div class="bar-group page-jump" aria-label="Seitennavigation">
+      <div id="slider-preview" class="slider-preview" hidden>
+        <img id="slider-preview-img" class="slider-preview-img" alt="Seitenvorschau" />
+        <div id="slider-preview-label" class="slider-preview-label">Seite 1</div>
+        <div id="slider-preview-chapter" class="slider-preview-chapter"></div>
+      </div>
+      <input
+        id="page-slider"
+        class="page-slider"
+        type="range"
+        min="1"
+        max="1"
+        step="1"
+        value="1"
+        aria-label="Seite per Slider waehlen"
+      />
+      <div class="page-indicator">
+        <span id="current-page">1</span>
+        <span>/</span>
+        <span id="total-pages">0</span>
+      </div>
+    </div>
+    <div class="bar-group bar-group-right">
+      <button id="zoom-out-btn" class="bar-btn bar-btn-red" type="button" aria-label="Rauszoomen">-</button>
+      <button id="zoom-reset-btn" class="bar-btn bar-btn-red" type="button" aria-label="Zoom zurÃ¼cksetzen">100%</button>
+      <button id="zoom-in-btn" class="bar-btn bar-btn-red" type="button" aria-label="Reinzoomen">+</button>
+    </div>
+    <div class="mobile-menu-spacer" aria-hidden="true"></div>
+  </footer>
+
+  <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>
+

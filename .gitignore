@@ -1,0 +1,31 @@
+# ---------------------------------------------------------------
+# Inhalte der Festschrift bleiben nur lokal (Rechte bei Fotografen,
+# Autoren und Schriftherstellern). Öffentlich ist nur der Viewer-Code.
+# ---------------------------------------------------------------
+
+# Quelldateien (Affinity, Bilder, Schriften) und Arbeitsordner
+Festschrift/
+export/
+
+# PDFs und Logo-Quelle
+*.pdf
+FFW Logo*.png
+
+# Generierte Seitenbilder und echte Metadaten
+website/assets/prebuilt/webplow/
+website/assets/prebuilt/webphigh/
+website/assets/prebuilt/webpthumb/
+website/assets/prebuilt/manifest.json
+website/assets/prebuilt/pdf-metadata.json
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
